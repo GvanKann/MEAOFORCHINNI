@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Journey Through Us ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <!-- Dialogue Box -->
+        <div id="dialogue-box" class="hidden">
+            <div id="dialogue-text"></div>
+            <button id="dialogue-continue" class="hidden">Continue →</button>
+        </div>
+        
+        <!-- Final Question Screen -->
+        <div id="final-screen" class="hidden">
+            <h1 id="final-question">Will you be my girlfriend?</h1>
+            <div id="buttons-container">
+                <button id="yes-button">YES ❤️</button>
+                <button id="no-button" class="no-btn">No</button>
+            </div>
+        </div>
+        
+        <!-- Celebration Screen -->
+        <div id="celebration-screen" class="hidden">
+            <h1>🎉 Achievement Unlocked! 🎉</h1>
+            <h2 id="achievement-text">You + Me ❤️</h2>
+            <p>I guess we're officially a team now.</p>
+            <div id="hearts-container"></div>
+        </div>
+        
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>💕 A Journey Through Us 💕</h1>
+            <p>A little game about us...</p>
+            <button id="start-button">Start Game ▶️</button>
+            <div id="controls-hint">
+                <p>Use Arrow Keys or WASD to move</p>
+                <p>Press SPACE to interact</p>
+            </div>
+        </div>
+        
+        <!-- Memory Collection Counter -->
+        <div id="memory-counter" class="hidden">
+            <span> memories: <span id="memory-count">0</span>/<span id="total-memories">5</span></span>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
